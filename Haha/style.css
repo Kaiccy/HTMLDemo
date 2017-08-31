@@ -1,0 +1,29 @@
+.suibian{
+	background: blue;
+	width:100px;
+	height: 100px;
+	font-size: 18px;
+	align-content: center;
+
+	/*border: 10px solid yellow;*/
+	border-bottom: 10px solid #000;
+    outline-color: #FFD001;
+
+    transition: 1.5s all linear 0s;
+}
+
+.sui:hover{
+	background-color: yellow;
+	border: 13px solid #000;
+
+	outline-style:dotted;
+  outline-color: #FFD001;
+
+  transition: 1.5s all linear 1s;
+  -webkit-transition: all 0.20s linear 0s;
+  
+}
+
+.haha{
+	display: block;
+}

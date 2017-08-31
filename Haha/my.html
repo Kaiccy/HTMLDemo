@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>做个试验</title>
+	<link rel="stylesheet" href="style.css">
+
+	<style type = "text/css">
+		
+		p {
+			text-align:  center;
+		}
+
+		p : first-child {
+			color : red !important; 
+			text-align:  center;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<i class="suibian" class="haha">好吧11</i>
+	<font class="suibian" cl ass="haha" size="50px" color="red">
+		什么呀
+	</font>
+
+	<div class="suibian">
+			
+	</div>
+	<div class="sui">
+		
+	</div>
+
+	<style type="text/css" media="screen">
+		.sui{
+			background-color: red;
+			height:100px;
+			width: 100px;
+		}	
+	</style>
+
+	<p>
+		<a href="#method1">页面锚点方法一</a>
+	</p>
+	<p>
+	<a href="#method2">页面锚点方法二</a>
+	</p>
+	<h2><a name ="method1">方法一</a></h2>
+	<p>使用锚标签的 href 和 name 属性</p>
+	<h2 id="method2">方法二</h2>
+	<p>使用锚标签和 id 属性</p>
+
+	<!-- 列表 -->
+	<ul>
+		<li>列表1</li>
+		<li>列表2</li>
+		<li>列表3</li>
+	</ul>
+
+	<dl>
+		<dt>蔬菜</dt>
+		<dd>白菜</dd>
+		<dd>辣椒</dd>
+		<dd>🍅</dd>
+		<dt>水果</dt>
+		<dd>苹果</dd>
+		<dd>苹果</dd>
+	</dl>
+
+	<em>停停停！！！！！！！！！！！！</em><br><br>
+	<strong>注意注意</strong><br>
+	<dfn>定义项目</dfn><br>
+	<samp>定义样本文本</samp><br>
+	<cite>定义引用</cite>
+
+	<!-- 跳转到指定页面 -->
+	<br>
+	<br>	
+	<a href="test1.html">跳转到test1.html页面</a>
+
+
+
+<!-- 练习 -->
+
+
+<!-- 无序列表 -->
+<h3>头条新闻</h3>
+<hr width="300px" align="left">
+<ul type="circle">
+	<li>娱乐头条1</li>
+	<li>娱乐头条2</li>
+	<li>娱乐头条3</li>
+	<li>娱乐头条4</li>
+	<li>娱乐头条5</li>
+	<li>娱乐头条6</li>
+</ul>
+
+<!-- 快速写出代码 ul>li*3 , 然后tab键，快速出现多个li标签 -->
+
+<!-- ul>li*2>h2+ul>li*3 -->
+<ul>
+	<li>
+		<h2></h2>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</li>
+	<li>
+		<h2></h2>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</li>
+</ul>
+
+<!-- 有序列表 -->
+<!-- type 里面可以定义它的序号格式 a,b,c ...-->
+<br>
+<ol type="a">
+<h3>有序列表</h3>
+	<li>第一</li>
+	<li>第二</li>
+	<li>第三</li>
+</ol>
+
+
+<!-- table 表格 -->
+<table bgcolor="black" cellspacing="1px" width="300px">
+	<caption>
+		<h3>价格表</h3>
+	</caption>
+
+	<tr bgcolor="gray" align="center">
+		<th>单价</th>
+		<th>数量</th>
+		<th>总额</th>
+		<th>图片</th>
+		<th>链接</th>
+	</tr>
+
+	<tr bgcolor="white" align="center">
+		<td>1</td>
+		<td align="left">3</td>
+		<td>3</td>
+		<td><img src="1.png"></td>	
+		<td><a href="#">百度</a></td>
+	</tr>
+
+	<tr bgcolor="white" align="center">
+		<td>1</td>
+		<td align="left">2</td>
+		<td>2</td>
+		<td><img src="1.png"></td>
+		<td><a href="#">百度</a></td>
+	</tr>
+
+</table>
+
+
+<!-- 合并单元格 -->
+<br><br><br>
+
+<table bgcolor="black" cellspacing="1px" width="300px" height="100px">
+	<caption>
+		
+		<h3>单元格合并</h3>
+	</caption>
+	<tr bgcolor="white">
+		<td colspan="2"></td>
+		<td></td>
+	</tr>
+	<tr bgcolor="white">
+		<td></td>
+		<td></td>
+		<td rowspan="3"></td>
+		
+	</tr>
+	<tr bgcolor="white">
+		<td></td>
+		<td></td>
+		
+	</tr>
+	<tr bgcolor="white">
+		<td></td>
+		<td></td>
+		
+	</tr>
+</table>
+	
+
+
+<!-- 表单标签 -->
+<br><br><br>
+
+<form action="https://www.baidu.com">
+	
+	<!-- value 是默认值 -->
+	账号：<input type="text" value="张三" name="username"><br> 
+	密码：<input type="password" name="password"><br><br><br>
+
+	<!-- 单选框 -->
+	性别：<input type="radio" name="sex">男 
+	<input type="radio" name="sex" checked="checked">女 
+	<input type="radio" name="sex" checked>女
+
+	<!-- 多选框 -->
+	<br><br>
+	<input type="checkbox" checked="checked">游泳
+	<input type="checkbox">篮球
+	<input type="checkbox">足球
+	<input type="checkbox">🏓
+
+	<!-- 按钮 -->
+	<br><br><br>
+	<input type="button" value="按钮" onclick="alert(123)"><br>
+
+	<!-- 图片按钮 -->
+	<input type="image" src="1.png" onclick="alert(123)"><br>
+
+	<!-- 重置按钮 -->
+	<input type="reset" value="清空">
+
+	<!-- 提交按钮 -->
+	<br>	
+	<input type="submit">
+
+	<input type="hidden" name="secret" value="you guess">    <br><br><br><br>
+
+	<!-- 使得文字与输入框绑定，聚焦 -->
+	<label for="username">账号：</label><input type="text" id="username">   <br><br>
+	<!-- 或者 (有局限性)-->
+	<label>
+		账号：<input type="text">
+	</label>
+
+	<!-- datalist标签 -->
+	车牌号：<input type="text" list="cars">
+	<datalist id="cars">
+		<option>宝马</option>
+		<option>奥迪</option>
+		<option>奔驰</option>
+		<option>劳斯莱斯</option>
+	</datalist>
+	
+	<hr><br><br>
+	<select>
+
+	<optgroup label="一系">
+		<option>宝马</option>
+		<option selected="selected">奥迪</option>
+	</optgroup>
+
+	<optgroup label="二系">
+		<option>奔驰</option>
+		<option>劳斯莱斯</option>
+	</optgroup>
+
+	</select>	
+
+ 
+	<!-- textarea标签 -->
+	<textarea cols="30" rows="10">
+		
+	</textarea>
+
+</form>
+
+
+
+<!-- 视频标签 -->
+<video>
+
+	<source src="" type=""></source>
+	<source src="" type=""></source>
+
+</video>
+
+<!-- 详情与概要 -->
+<details>
+	<summary>孔子</summary>
+	孔子生于***年，****************************，
+	一生致力于************************
+</details>
+
+
+<!-- 跑马灯 -->
+<marquee behavior="slide" direction="right" scrollamount="10" loop="2"> hola </marquee>
+
+<!-- 废弃的标签 -->
+<strong>加粗</strong>
+<em>倾斜</em>
+<ins>插入文字</ins>
+<del>删除内容</del>
+
+<p>16 + "Volvo"</p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
